@@ -52,9 +52,9 @@ jobs:
           properties: |
             kotlin.js.compiler=ir
             kotlin.parallel.tasks.in.project=true
-          
+      
       - name: Upload all artifacts
         uses: actions/upload-artifact@v4
         with:
           name: Terra
-          path: target/Terra-*.jar
+          path: build/libs/Terra-*-shaded.jar
